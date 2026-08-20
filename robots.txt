@@ -1,0 +1,7 @@
+User-agent: TelegramBot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://daylance.farnood.tech/sitemap.xml

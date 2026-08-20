@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Daylance">
+  <path
+    fill="#64D2FF"
+    fill-rule="evenodd"
+    d="M306 199H612.46A325.35 325.35 0 0 1 614.28 819H306A53 53 0 0 1 253 766V252A53 53 0 0 1 306 199Zm50 92H584.95A226.52 226.52 0 0 1 581.73 728H356A16 16 0 0 1 340 712V307A16 16 0 0 1 356 291Z"
+  />
+  <g fill="#64D2FF">
+    <circle cx="461" cy="452" r="40.5" />
+    <circle cx="574.5" cy="452" r="40.5" />
+    <circle cx="461" cy="562" r="40.5" />
+    <circle cx="574.5" cy="562" r="40.5" />
+  </g>
+</svg>
