@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Connect your account · Daylance</title>
+    <base href="/connect/" />
+    <link rel="stylesheet" href="consent.css" />
+    <script type="module" src="consent.js"></script>
+  <meta name="referrer" content="no-referrer" /><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self' https://tzzlsupvtksnjlkzxvip.supabase.co; img-src 'self'; base-uri 'self'; form-action 'self'" /></head>
+  <body>
+    <main>
+      <header><a id="app-link" href="/">Daylance<span class="brand-dot" aria-hidden="true"></span></a><span>Connected apps</span></header>
+      <section class="card" aria-labelledby="title">
+        <p class="eyebrow">Your money, in your words</p>
+        <h1 id="title">Connect your Daylance account</h1>
+        <p id="intro">Sign in to use your spaces and ledger with ChatGPT.</p>
+        <p id="message" role="status" aria-live="polite">Loading your connection…</p>
+        <p id="error" role="alert" tabindex="-1" hidden></p>
+        <section id="login" hidden>
+          <button type="button" id="google" class="secondary">Continue with Google</button>
+          <button type="button" id="apple" class="secondary provider">Continue with Apple</button>
+          <p class="divider">or use email</p>
+          <form id="login-form">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required />
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" required />
+            <button type="submit">Sign in</button>
+          </form>
+          <p class="footnote">Use the same account you use in Daylance. Your password goes directly to Daylance’s sign-in provider.</p>
+        </section>
+        <section id="consent" hidden>
+          <p id="identity" class="identity"></p>
+          <h2 id="client-name">Allow this connection?</h2>
+          <ul>
+            <li>Read entries, balances, accounts, categories, members, and split policies in the spaces you can access.</li>
+            <li>Create entries, categories, and split policies in spaces where you are an editor or owner.</li>
+          </ul>
+          <p class="footnote">Entries record activity in your ledger. They do not move money. This connection uses your existing space permissions. Data requested in a chat is shared with the connected app.</p>
+          <p id="scopes" class="footnote"></p>
+          <div class="actions"><button id="approve" type="button">Allow connection</button><button id="deny" type="button" class="secondary">Don’t allow</button></div>
+          <p class="footnote">You can disconnect at any time from <a href="?manage=1">Connected apps</a>.</p>
+        </section>
+        <section id="connections" hidden><div id="grants"></div></section>
+        <button id="sign-out" type="button" class="quiet" hidden>Use a different account</button>
+      </section>
+      <footer><a href="?manage=1">Manage connections</a><span>Shared spaces. Clear balances.</span></footer>
+    </main>
+  </body>
+</html>
